@@ -2,55 +2,25 @@
 <html>
 <head>
 	<title>Prima pagina</title>
-	<style type="text/css">
-		header {
-			background-color: pink;
-			width: 100%;
-			padding: 1%;
-			margin-bottom: 1%;
-		}
-		nav {
-			background-color: lightblue;
-			width: 100%;
-			padding: 1%;
-			margin-bottom: 1%;
-		}
-		main {
-			background-color: orange;
-			width: 70%;
-			display: flex;
-			float: left;
-		}
-		article {
-			margin: 1%;
-		}
-		aside {
-			background-color: green;
-			width: 20%;
-			float: right;
-			position: relative;
-			right: 2%;
-			padding: 2%;
-		}
-		main aside {
-			width: 60%;
-			float: none;
-		}
-		.qcont:first-letter {
-  			color: red;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<h1>La mia prima pagina</h1>
+	<div id="grid-container">
+		<div class="row">
+			<div class="col-1">
+				<h1>La mia prima pagina</h1>
 
-			<header>
-			<h2>Your title</h2>
-			<h3>Your subtitle</h3>
-			    <figure style="position: relative; top: -90px; left: 200px">
-        			<img src="https://cdn.mos.cms.futurecdn.net/hFm4iWXhbw4c4rdcMH8tUD-320-80.jpg" alt="logo" width="100px"/>
-   				</figure>
-			</header>
+				<header>
+					<h2>Your title</h2>
+					<h3>Your subtitle</h3>
+			    		<figure style="position: relative; top: -90px; left: 200px">
+        					<img src="https://cdn.mos.cms.futurecdn.net/hFm4iWXhbw4c4rdcMH8tUD-320-80.jpg" alt="logo" width="100px"/>
+   						</figure>
+				</header>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1">
 
 			    <nav>
         			<a href="index.html">Home</a>
@@ -58,6 +28,10 @@
         			<a href="contact.html">Contact</a>
         			<a href="about.html">About Us</a>
     			</nav>
+    		</div>
+		</div>
+		<div class="row">
+			<div class="col-1-2">
 		<main>
 			<article>
 				<section>
@@ -90,14 +64,17 @@
         			</aside>
 			</article>
 	</main>
+	</div>
+	<div class="col-6">
 
 	        <aside>
             <p>Learn More</p>
             <p><a href="https://www.w3schools.com/html/">HTML School</a></p>
             <p><a href="https://developer.mozilla.org/en-US/">Mozilla web docs</a></p>
         	</aside>
-
-
-
+    </div>
+</div>
+    
+</div>
 </body>
 </html>
