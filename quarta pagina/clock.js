@@ -24,12 +24,19 @@ function time(){
 	let currTime = h + ":" + m + ":" + s + ":" + meridien;
 	console.log(currTime);
 
+	// attraverso il backslash diciamo che un carattere non deve essere interpretato
+	// in questo modo evitiamo che i doppio apice chiudano la dichiarazione della stringa
 	let xss = "<img src=\"foo.img\" onerror=\"alert(document.cookie)\">";
 
 	document.getElementById("clock").innerText = currTime; 
 	//document.getElementById("clock").innerHTML = xss; 
+	
+	// crea una serie ricorsiva di chiamate 
 	window.setTimeout(time, 1000);
 
 }
+
+// in alternativa possiamo richiamare la funzione con un ritardo ripetuto
+//window.setInterval(time, 1000);
 
 time();
