@@ -15,13 +15,7 @@
 		}
 	</style>
 	<script type="text/javascript">
-		function circle(x,y,r){
-			this.xcord = x;
-			this.ycord = y;
-			this.radius = r;
-			this.area = function(){return Math.PI * this.radius * this.radius};
-
-		}
+		
 
 		// funzione attivata dal click del bottone
 		function compute(){
@@ -29,15 +23,24 @@
 			// acquisizione dei valori dai campi di input
 			var rmin = document.getElementById("rmin").value;
 			var rmax = document.getElementById("rmax").value;
-			console.log(rmin, rmax);
+			var arg =[];
+			arg[0] = rmin;
+			arg[1] = rmax;
+			var sarg = JSON.stringify(arg)
+			console.log(sarg);
 
-			// ciclo per ottenere gli itneri nell'intervallo di valori
-			for(i=rmin; i<=rmax; i++){
-				var cerchio = new circle(1,1,i);
-				txt = "per un raggio pari a " +i+ ", l'area ha valore " + cerchio.area();
-				document.getElementById("results").innerText += txt;
+			w = new Worker("./worker/worker.js");
+			w.postMessage(sarg);
+			w.onmessage = function(e){
+				document.getElementById("results").innerText += e.data;
 				document.getElementById("results").innerHTML += "<br>";
-			}
+			
+			//w = new Worker("./worker/worker.js");
+			//w.postMessage("1");
+			//w.onmessage = function(e){
+			//	document.getElementById("results").innerText += e.data;
+			//} 
+
 		console.timeEnd("Time of the compute function");
 		}
 	</script>
