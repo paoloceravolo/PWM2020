@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Edited by XMLSpy® -->
+<calendario>
+<meta><anno>2015</anno><edizione>16</edizione></meta>
+	<partita>
+		<giornata>Prima Giornata</giornata>
+		<casa>Galles</casa>
+		<ospite>Inghilterra</ospite>
+		<ptCasa>16</ptCasa>
+		<ptOspite>21</ptOspite>
+		<stadio>Millennium Stadium</stadio>
+	</partita>
+	<partita>
+		<giornata>Prima Giornatat</giornata>
+		<casa>Italia</casa>
+		<ospite>Irlanda</ospite>
+		<ptCasa>3</ptCasa>
+		<ptOspite>26</ptOspite>
+		<stadio>Stadio Olimpico</stadio>
+	</partita>
+	<partita>
+		<giornata>Prima Giornata</giornata>
+		<casa>Francia</casa>
+		<ospite>Scozia</ospite>
+		<ptCasa>15</ptCasa>
+		<ptOspite>8</ptOspite>
+		<stadio>Stade de France</stadio>
+	</partita>
+	<partita>
+		<giornata>Seconda Giornata</giornata>
+		<casa>Inghilterra</casa>
+		<ospite>Italia</ospite>
+		<ptCasa>47</ptCasa>
+		<ptOspite>17</ptOspite>
+		<stadio>Twickenham</stadio>
+	</partita>
+	<partita>
+		<giornata>Seconda Giornata</giornata>
+		<casa>Irlanda</casa>
+		<ospite>Francia</ospite>
+		<ptCasa>18</ptCasa>
+		<ptOspite>11</ptOspite>
+		<stadio>Aviva Stadium</stadio>
+	</partita>
+	<partita>
+		<giornata>Seconda Giornata</giornata>
+		<casa>Scozia</casa>
+		<ospite>Galles</ospite>
+		<ptCasa>23</ptCasa>
+		<ptOspite>26</ptOspite>
+		<stadio>Murrayfield</stadio>
+	</partita>
+	<partita>
+		<giornata>Terza Giornata</giornata>
+		<casa>Scozia</casa>
+		<ospite>Italia</ospite>
+		<ptCasa>19</ptCasa>
+		<ptOspite>22</ptOspite>
+		<stadio>Murrayfield</stadio>
+	</partita>
+	<partita>
+		<giornata>Terza Giornata</giornata>
+		<casa>Francia</casa>
+		<ospite>Galles</ospite>
+		<ptCasa>13</ptCasa>
+		<ptOspite>20</ptOspite>
+		<stadio>Stade de France</stadio>
+	</partita>
+	<partita>
+		<giornata>Terza Giornata</giornata>
+		<casa>Irlanda</casa>
+		<ospite>Inghilterra</ospite>
+		<ptCasa>19</ptCasa>
+		<ptOspite>9</ptOspite>
+		<stadio>Aviva Stadium</stadio>
+	</partita>
+	<partita>
+		<giornata>Quarta Giornata</giornata>
+		<casa>Galles</casa>
+		<ospite>Irlanda</ospite>
+		<ptCasa>23</ptCasa>
+		<ptOspite>16</ptOspite>
+		<stadio>Millennium Stadium</stadio>
+	</partita>
+	<partita>
+		<giornata>Quarta Giornata</giornata>
+		<casa>Inghilterra</casa>
+		<ospite>Scozia</ospite>
+		<ptCasa>25</ptCasa>
+		<ptOspite>13</ptOspite>
+		<stadio>Twickenham</stadio>
+	</partita>
+	<partita>
+		<giornata>Quarta Giornata</giornata>
+		<casa>Italia</casa>
+		<ospite>Francia</ospite>
+		<ptCasa>0</ptCasa>
+		<ptOspite>29</ptOspite>
+		<stadio>Stadio Olimpico</stadio>
+	</partita>
+	<partita>
+		<giornata>Quinta Giornata</giornata>
+		<casa>Italia</casa>
+		<ospite>Galles</ospite>
+		<ptCasa>20</ptCasa>
+		<ptOspite>61</ptOspite>
+		<stadio>Stadio Olimpico</stadio>
+	</partita>
+	<partita>
+		<giornata>Quinta Giornata</giornata>
+		<casa>Scozia</casa>
+		<ospite>Irlanda</ospite>
+		<ptCasa>10</ptCasa>
+		<ptOspite>40</ptOspite>
+		<stadio>Murrayfield</stadio>
+	</partita>
+	<partita>
+		<giornata>Quinta Giornata</giornata>
+		<casa>Inghilterra</casa>
+		<ospite>Francia</ospite>
+		<ptCasa>55</ptCasa>
+		<ptOspite>35</ptOspite>
+		<stadio>Twickenham</stadio>
+	</partita>
+</calendario>
