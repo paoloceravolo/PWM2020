@@ -20,5 +20,5 @@ var char = url.lastIndexOf("/")+1;
 var filename = url.substr(char);
 var path = url.slice(0,char);
 
-console.log(linkTag[0].href);
-console.log(path + " __ " + filename);
+//console.log(linkTag[0].href);
+//console.log(path + " __ " + filename);

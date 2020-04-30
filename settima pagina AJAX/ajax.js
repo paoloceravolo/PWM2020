@@ -5,8 +5,8 @@ var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function(){
 	if(xhr.readyState === 4){
 		if(xhr.status === 200){
-			var resp = xhr.response;
-			console.log(resp);
+			var resp = JSON.parse(xhr.response);
+			console.log(resp[16].id);
 		}
 	}
 }
