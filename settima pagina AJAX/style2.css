@@ -13,7 +13,7 @@ header {
 		main {
 			background-color: #84b1aa;
 			/*width: 70%;*/
-			display: flex;
+			display: inline-block;
 			/*float: left;*/
 		}
 		article {
