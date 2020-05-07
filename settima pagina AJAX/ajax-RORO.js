@@ -12,7 +12,7 @@ const ajaxcallObj = {
 }
 
 localStorage.setItem("locations", "[{lat: -42.735258, lng: 147.438000},{lat: -43.999792, lng: 170.463352}]");
-localStorage.setItem("locations", 'ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+localStorage.setItem("labels", 'ABCDEFGHIJKLMNOPQRSTUVWXYZ');
 
 // chiamo la funzione con le sue callback
 callAjax(ajaxcallObj, templateObj, template, drawMap);
