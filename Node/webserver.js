@@ -3,13 +3,16 @@ const fs = require('fs');
 
 var server = http.createServer();
 
-error = null;
-output = null;
-
-function lista_img(path){
+function lista_img(path, callback){
 	fs.readdir(path, (err, files)=>{
-		if(err){error = {'error': err}; return}
-		else{output = {'error': null, 'data': files}; return}
+		if(err){
+			error = {'error': err};
+			callback(error);
+		}
+		else{
+			output = {'error': null, 'data': files};
+			callback(output.error, output.data);
+		}
 	});
 }
 
@@ -18,15 +21,17 @@ server.on('request', (req, res)=>{
 	//console.log(req.url);
 	path = process.cwd()+req.url;
 
-	lista_img(path);
+	lista_img(path, createResp);
+
+	function createResp(error, data){
 		if(error !== null){
 			res.writeHead(400, {'Content-Type': 'application/json'});
 			res.end(JSON.stringify(error) + '\n');
 		}
 		res.writeHead(400, {'Content-Type': 'application/json'});
-		res.end(JSON.stringify(output) + '\n');
-
-});
+		res.end(JSON.stringify(data) + '\n');
+	}
+	});
 
 server.on('error', function(err){
 	console.log(err);
