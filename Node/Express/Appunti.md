@@ -81,3 +81,34 @@ L'app generata avrà la seguente struttura:
    	 	├── index.pug
    	 	└── layout.pug
 
+# Installazione di Nodemon
+
+
+Nodemon is a utility that will monitor for any changes in your source and automatically restart your server. Perfect for development
+
+	$ sudo npm install -g nodemon
+
+Just use nodemon instead of node to run your code.
+
+# Creaizone App
+
+	$ express --hogan pwmapp
+	$ cd pwmapp
+	$ npm install
+	
+	
+# Installazione Express-session
+
+- istallazione di express-session
+
+		$ npm install --save express-session
+		
+- semplice codice di count delle visite: https://www.tutorialspoint.com/expressjs/expressjs_sessions.htm
+
+# Installazione simple autentication
+
+- istallazione di 
+
+		$ npm install --save express-basic-auth
+
+- https://medium.com/javascript-in-plain-english/add-basic-authentication-to-an-express-app-9536f5095e88 
