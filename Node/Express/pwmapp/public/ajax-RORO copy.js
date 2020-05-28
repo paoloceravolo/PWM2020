@@ -49,7 +49,6 @@ function template(response, temp){
 
       //console.log(resp[3].id);
       //console.log(targ);
-      console.log(temp.filter);
 
       // pulisce l'elemento target
       targ.innerHTML = '';
@@ -78,7 +77,6 @@ function template(response, temp){
          targ.appendChild(newEle1);
       }
 
-    console.log(temp.filter);
    if(temp.filter == null) {
     resp.forEach(appendResponse);
     }
@@ -134,7 +132,7 @@ function drawMap(response){
         //let labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         let labels = localStorage.getItem("labels");
         labels = JSON.parse(labels);
-        //console.log(labels[0]);
+        console.log(labels[0]);
 
 
 
