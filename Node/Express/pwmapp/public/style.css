@@ -1,0 +1,111 @@
+header {
+			background-color: pink;
+			/*width: 100%;*/
+			padding: 1%;
+			margin-bottom: 1%;
+		}
+		nav {
+			background-color: lightblue;
+			/*width: 100%;*/
+			padding: 1%;
+			margin-bottom: 1%;
+		}
+		main {
+			background-color: orange;
+			/*width: 70%;*/
+			display: inline-block;
+			/*float: left;*/
+		}
+		article {
+			margin: 1%;
+		}
+		aside {
+			background-color: green;
+			/*width: 20%;
+			float: right;
+			position: relative;
+			right: 2%;
+			padding: 2%;*/
+		}
+		main aside {
+			width: 60%;
+			float: none;
+		}
+		.qcont:first-letter {
+  			color: red;
+		}
+
+		#grid-container {
+			width: 100%;
+			max-width: 1200px
+		}
+
+		.row:before, .row:after{
+			clear: both;
+			content: "";
+			display: table;
+		}
+
+		[class*='col-']{
+			float:left;
+			min-height: 1px;
+		}
+
+		.col-1{width: 100%}
+		.col-1-2{width: 83.33%}
+		.col-2{width: 50%}
+		.col-3{width: 33.33%}
+		.col-4{width: 25%}
+		.col-5{width: 20%}
+		.col-6{width: 16.66%}
+
+		 @media all and (max-width:800px){
+		.col-1{width: 100%}
+		.col-1-2{width: 100%}
+		.col-2{width: 50%}
+		.col-3{width: 33.33%}
+		.col-4{width: 100%}
+		.col-5{width: 100%}
+		.col-6{width: 100%}
+
+    	}
+
+		 @media all and (max-width:450px){
+		.col-1{width: 100%}
+		.col-1-2{width: 100%}
+		.col-2{width: 50%}
+		.col-3{width: 100%}
+		.col-4{width: 100%}
+		.col-5{width: 100%}
+		.col-6{width: 100%}
+
+		aside{display: none}
+    	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
